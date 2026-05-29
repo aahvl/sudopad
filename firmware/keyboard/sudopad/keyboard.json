@@ -1,0 +1,38 @@
+{
+    "keyboard_name": "sudopad",
+    "manufacturer": "Aahil",
+    "maintainer": "Aahil",
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "board": "GENERIC_RP_RP2040",
+    "usb": {
+        "vid": "0xFEED",
+        "pid": "0x6060",
+        "device_version": "0.0.1"
+    },
+    "diode_direction": "COL2ROW",
+    "matrix_pins": {
+        "direct": [
+            ["GP29", "GP3", "GP4"]
+        ]
+    },
+    "encoder": {
+        "enabled": true,
+        "rotary": [
+            { "pin_a": "GP26", "pin_b": "GP27" }
+        ]
+    },
+    "features": {
+        "extrakey": true,
+        "oled": true
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                { "matrix": [0, 0], "label": "Cut",   "x": 0, "y": 0 },
+                { "matrix": [0, 1], "label": "Copy",  "x": 1, "y": 0 },
+                { "matrix": [0, 2], "label": "Paste", "x": 2, "y": 0 }
+            ]
+        }
+    }
+}
